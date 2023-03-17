@@ -5,9 +5,9 @@
   "display": "standalone",
   "name": "investeasy.netlify",
   "orientation": "any",
-  "scope": "https://investeasy.netlify.app/",
+  "scope": "index.html",
   "short_name": "investeasy.netlify",
-  "start_url": "https://investeasy.netlify.app",
+  "start_url": "index.html",
   "theme_color": "#ffffff",
   "categories": [
     "business",
@@ -16,19 +16,19 @@
   "screenshots": [],
   "icons": [
     {
-      "src": "/images/180.png",
+      "src": "images/180.png",
       "sizes":"180x180",
       "type": "image/png",
       "purpose": "any"     
     },
     {
-      "src": "/images/playstore.png",
+      "src": "images/playstore.png",
       "sizes":"512x512",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "/images/appstore.png",
+      "src": "images/appstore.png",
       "sizes":"1024x1024",
       "type": "image/png"
     }
@@ -36,22 +36,22 @@
   "shortcuts": [
     {
       "name": "Intro",
-      "url": "https://investeasy.netlify.app/#intro",
+      "url": "/#intro",
       "description": "introdução "
     },
     {
       "name": "Trabalho",
-      "url": "https://investeasy.netlify.app/#work",
+      "url": "/#work",
       "description": "Trabalho"
     },
     {
       "name": "Sobre",
-      "url": "https://investeasy.netlify.app/#about",
+      "url": "/#about",
       "description": "Sobre"
     },
     {
       "name": "Contato",
-      "url": "https://investeasy.netlify.app/#contact",
+      "url": "/#contact",
       "description": "Contato"
     }
   ],

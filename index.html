@@ -11,7 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="Tenha o auxílio financeiro necessário com a Investeasy.">
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="manifest" href="assets/pwa/manifest.json">
+		<link rel="manifest" href="manifest.json">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -93,10 +93,10 @@
 									</ul>
 								</form>
 								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.twitter.com" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.facebook.com" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.instagram.com" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://www.github.com" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
 							</article>
 
@@ -362,10 +362,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/main.js"></script>
 			<script>
 				if (typeof navigator.serviceWorker !== 'undefined') {
-				  navigator.serviceWorker.register('sw.js')
+				  navigator.serviceWorker.register('service-worker.js')
 				}
 			</script>
-			  
 
 	</body>
 </html>
