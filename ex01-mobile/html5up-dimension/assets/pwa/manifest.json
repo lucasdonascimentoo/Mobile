@@ -1,0 +1,65 @@
+{
+  "background_color": "#ffffff",
+  "description": "Tenha o auxílio financeiro necessário com a Investeasy.",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "investeasy.netlify",
+  "orientation": "any",
+  "scope": "https://investeasy.netlify.app/",
+  "short_name": "investeasy.netlify",
+  "start_url": "https://investeasy.netlify.app",
+  "theme_color": "#ffffff",
+  "categories": [
+    "business",
+    "finance"
+  ],
+  "screenshots": [],
+  "icons": [
+    {
+      "src": "/images/180.png",
+      "sizes":"180x180",
+      "type": "image/png",
+      "purpose": "any"     
+    },
+    {
+      "src": "/images/playstore.png",
+      "sizes":"512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/images/appstore.png",
+      "sizes":"1024x1024",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Intro",
+      "url": "https://investeasy.netlify.app/#intro",
+      "description": "introdução "
+    },
+    {
+      "name": "Trabalho",
+      "url": "https://investeasy.netlify.app/#work",
+      "description": "Trabalho"
+    },
+    {
+      "name": "Sobre",
+      "url": "https://investeasy.netlify.app/#about",
+      "description": "Sobre"
+    },
+    {
+      "name": "Contato",
+      "url": "https://investeasy.netlify.app/#contact",
+      "description": "Contato"
+    }
+  ],
+  "lang": "pt",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "browser"
+  ],
+  "prefer_related_applications": false
+}
