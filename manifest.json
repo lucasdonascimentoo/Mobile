@@ -6,31 +6,33 @@
   "name": "investeasy.netlify",
   "orientation": "any",
   "scope": "index.html",
-  "short_name": "investeasy.netlify",
-  "start_url": "index.html",
+  "short_name": "investeasy",
+  "start_url": "https://investeasy.netlify.app/",
   "theme_color": "#ffffff",
   "categories": [
     "business",
     "finance"
   ],
-  "screenshots": [],
   "icons": [
-    {
-      "src": "images/180.png",
-      "sizes":"180x180",
-      "type": "image/png",
-      "purpose": "any"     
-    },
-    {
-      "src": "images/playstore.png",
-      "sizes":"512x512",
-      "type": "image/png",
-      "purpose": "maskable"
-    },
     {
       "src": "images/appstore.png",
       "sizes":"1024x1024",
       "type": "image/png"
+    },
+    {
+      "src": "images/114.png",
+      "sizes":"114x114",
+      "type": "image/png"
+    },
+    {
+      "src": "images/120.png",
+      "sizes":"120x120",
+      "type": "image/png"
+    }, 
+    {
+      "src": "images/180.png",
+      "sizes":"180x180",
+      "type": "image/png"     
     }
   ],
   "shortcuts": [
