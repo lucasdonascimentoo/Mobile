@@ -1,14 +1,14 @@
 {
-  "background_color": "#ffffff",
+  "background_color": "#31506F",
   "description": "Tenha o auxílio financeiro necessário com a Investeasy.",
   "dir": "ltr",
   "display": "standalone",
   "name": "investeasy.netlify",
   "orientation": "any",
-  "scope": "index.html",
+  "scope": "https://investeasy.netlify.app/",
   "short_name": "investeasy",
   "start_url": "https://investeasy.netlify.app/",
-  "theme_color": "#ffffff",
+  "theme_color": "#4D5360",
   "categories": [
     "business",
     "finance"
@@ -38,30 +38,23 @@
   "shortcuts": [
     {
       "name": "Intro",
-      "url": "/#intro",
+      "url": "/intro",
       "description": "introdução "
     },
     {
       "name": "Trabalho",
-      "url": "/#work",
+      "url": "/work",
       "description": "Trabalho"
     },
     {
       "name": "Sobre",
-      "url": "/#about",
+      "url": "/about",
       "description": "Sobre"
     },
     {
       "name": "Contato",
-      "url": "/#contact",
+      "url": "/contact",
       "description": "Contato"
     }
-  ],
-  "lang": "pt",
-  "display_override": [
-    "window-controls-overlay",
-    "standalone",
-    "browser"
-  ],
-  "prefer_related_applications": false
+  ]
 }
