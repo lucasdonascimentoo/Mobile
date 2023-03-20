@@ -40,7 +40,14 @@
       "sizes": "512x512",
       "type":"image/png",
       "purpose":"maskable"
+    },
+    {
+      "src": "images/144.png",
+      "sizes":"144x144",
+      "type": "image/png",
+      "purpose":"any"   
     }
+  
   ],
   "lang": "pt-BR",
   "display_override": [
