@@ -18,18 +18,18 @@ const PRECACHE_ASSETS = [
 
   './assets/js/main.js',
 
-  './img/180.png',
-  './img/appstore.png',
-  './img/bg.jpg',
-  './img/invest.jpg',
-  './img/invest2.jpg',
-  './img/invest3.jpg',
-  './img/overlay.jpg',
-  './img/pic02.jpg',
-  './img/pic03.jpg',
-  './img/playstore.png',
-  './img/simbolo-de-setas-duplas-para-a-direita-para-avancar.png',
-  './img/formulas.JPG'
+  './images/114.jpg',
+  './images/120.jpg',
+  './images/180.jpg',
+  './images/appstore.jpg',
+  './images/bg.jpg',
+  './images/invest.jpg',
+  './images/invest2.jpg',
+  './images/invest3.jpg',
+  './images/overlay.png',
+  './images/pic02.jpg',
+  './images/pic03.jpg',
+  './images/simbolo-de-setas-duplas-para-a-direita-para-avancar.png'
 ]
 
 // Listener for the install event - precaches our assets list on service worker install.
