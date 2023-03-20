@@ -19,35 +19,7 @@
       "sizes": "512x512",
       "type":"image/png",
       "purpose":"any"
-    },
-    {
-      "src": "images/appstore.jpg",
-      "sizes":"1024x1024",
-      "type": "image/jpg"
-    },
-    {
-      "src": "images/114.jpg",
-      "sizes":"114x114",
-      "type": "image/jpg"
-    },
-    {
-      "src": "images/120.jpg",
-      "sizes":"120x120",
-      "type": "image/jpg"
-    }, 
-    {
-      "src": "images/180.jpg",
-      "sizes":"180x180",
-      "type": "image/jpg",
-      "purpose":"maskable"   
-    },
-    
-    {
-      "src": "images/144.png",
-      "sizes":"144x144",
-      "type": "image/png"  
     }
-  
   ],
   "lang": "pt-BR",
   "display_override": [
