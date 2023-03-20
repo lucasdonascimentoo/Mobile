@@ -27,34 +27,21 @@
     {
       "src": "images/120.png",
       "sizes":"120x120",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose":"maskable"
     }, 
     {
       "src": "images/180.png",
       "sizes":"180x180",
-      "type": "image/png"     
+      "type": "image/png",
+      "purpose":"any"   
     }
   ],
-  "shortcuts": [
-    {
-      "name": "Intro",
-      "url": "/intro",
-      "description": "introdução "
-    },
-    {
-      "name": "Trabalho",
-      "url": "/work",
-      "description": "Trabalho"
-    },
-    {
-      "name": "Sobre",
-      "url": "/about",
-      "description": "Sobre"
-    },
-    {
-      "name": "Contato",
-      "url": "/contact",
-      "description": "Contato"
-    }
-  ]
+  "lang": "pt-BR",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "browser"
+  ],
+  "prefer_related_applications": false
 }
