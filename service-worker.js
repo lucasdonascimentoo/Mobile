@@ -1,63 +1,47 @@
-const CACHE_NAME = 'cool-cache';
+// This is the "Offline page" service worker
 
-// Add whichever assets you want to precache here:
-const PRECACHE_ASSETS = [
-  './index.html',
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
 
-  './assets/css/main.css',
+const CACHE = "pwabuilder-page";
 
-  './assets/css/noscript.css',
+// TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
+const offlineFallbackPage = "index.html";
 
-  './assets/js/jquery.min.js',
+self.addEventListener("message", (event) => {
+  if (event.data && event.data.type === "SKIP_WAITING") {
+    self.skipWaiting();
+  }
+});
 
-  './assets/js/browser.min.js',
+self.addEventListener('install', async (event) => {
+  event.waitUntil(
+    caches.open(CACHE)
+      .then((cache) => cache.add(offlineFallbackPage))
+  );
+});
 
-  './assets/js/breakpoints.min.js',
+if (workbox.navigationPreload.isSupported()) {
+  workbox.navigationPreload.enable();
+}
 
-  './assets/js/util.js',
+self.addEventListener('fetch', (event) => {
+  if (event.request.mode === 'navigate') {
+    event.respondWith((async () => {
+      try {
+        const preloadResp = await event.preloadResponse;
 
-  './assets/js/main.js',
+        if (preloadResp) {
+          return preloadResp;
+        }
 
-  './images/114.jpg',
-  './images/120.jpg',
-  './images/180.jpg',
-  './images/appstore.jpg',
-  './images/bg.jpg',
-  './images/invest.jpg',
-  './images/invest2.jpg',
-  './images/invest3.jpg',
-  './images/overlay.png',
-  './images/pic02.jpg',
-  './images/pic03.jpg',
-  './images/simbolo-de-setas-duplas-para-a-direita-para-avancar.png'
-]
+        const networkResp = await fetch(event.request);
+        return networkResp;
+      } catch (error) {
 
-// Listener for the install event - precaches our assets list on service worker install.
-self.addEventListener('install', event => {
-    event.waitUntil((async () => {
-        const cache = await caches.open(CACHE_NAME);
-        cache.addAll(PRECACHE_ASSETS);
+        const cache = await caches.open(CACHE);
+        const cachedResp = await cache.match(offlineFallbackPage);
+        return cachedResp;
+      }
     })());
-});
-
-self.addEventListener('activate', event => {
-  event.waitUntil(clients.claim());
-});
-
-self.addEventListener('fetch', event => {
-  event.respondWith(async () => {
-      const cache = await caches.open(CACHE_NAME);
-
-      // match the request to our cache
-      const cachedResponse = await cache.match(event.request);
-
-      // check if we got a valid response
-      if (cachedResponse !== undefined) {
-          // Cache hit, return the resource
-          return cachedResponse;
-      } else {
-        // Otherwise, go to the network
-          return fetch(event.request)
-      };
-  });
+  }
 });

@@ -17,8 +17,7 @@
     {
       "src": "images/appstore.jpg",
       "sizes":"1024x1024",
-      "type": "image/jpg",
-      "purpose":"maskable"
+      "type": "image/jpg"
     },
     {
       "src": "images/114.jpg",
@@ -35,6 +34,12 @@
       "sizes":"180x180",
       "type": "image/jpg",
       "purpose":"any"   
+    },
+    {
+      "scr": "images/512.png",
+      "sizes": "512x512",
+      "type":"image/png",
+      "purpose":"maskable"
     }
   ],
   "lang": "pt-BR",
